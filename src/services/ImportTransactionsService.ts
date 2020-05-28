@@ -64,6 +64,7 @@ class ImportTransactionsService {
 
     const finalCategories = [...newCategories, ...CategoriesCadastred];
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const allNewsTransactions: any[] = [];
 
     function getCategories(transaction: CSVTransaction): string {
